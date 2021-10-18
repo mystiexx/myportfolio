@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.header-text {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: 'Open sans';
+}
+
+.header-logo {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-family: 'Festive';
+}
+
+.title-text {
+  font-size: 2rem;
+  font-family: 'Noto sans Mono';
+  font-weight: 600;
+}
+
+.sub-text{
+  font-size: 0.9rem;
+  color: #B5B5B5;
+  text-transform: uppercase;
+  font-family: 'Open sans';
+}
+
+.sub-title {
+  font-size: 1rem;
+  font-family: 'Noto Sans Mono';
+  font-weight: 500;
+  text-align: left;
+  line-height: 30px;
+}
+
+.sub-text-right{
+  font-size: 0.9rem;
+  color: #B5B5B5;
+  text-transform: uppercase;
+  font-family: 'Open sans';
+  text-align: right;
+}
+
+.sub-title-right {
+  font-size: 2.5rem;
+  font-family: 'Noto Sans Mono';
+  font-weight: 500;
+  text-align: right;
+  line-height: 30px;
+}
+
+.sub-title-right-normal {
+  font-size: 1rem;
+  font-family: 'Noto Sans Mono';
+  font-weight: 500;
+  text-align: right;
+  line-height: 30px;
+}
+
