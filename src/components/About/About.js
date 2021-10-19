@@ -1,10 +1,14 @@
 import React from "react";
-import { Box, Text, Grid } from "@chakra-ui/react";
+import { Box, Text, Grid, Image, Center } from "@chakra-ui/react";
+import hero from "../../assets/hero.jpg";
+import { useMediaQuery } from "@chakra-ui/media-query";
 
 const About = () => {
+    const [isNotSmallerScreen] = useMediaQuery("(min-width: 600px)");
+
     return (
         <Box>
-            <Grid templateColumns="repeat(3, 1fr)" gap={3}>
+            <Grid templateColumns={isNotSmallerScreen ? "repeat(3, 1fr)" : "repeat(1, 1fr)"} gap={3}>
                 <Box>
                     <Text className="sub-text">{"Biography"}</Text>
                     <Text className="sub-title" mt={3}>
@@ -29,7 +33,12 @@ const About = () => {
                     </Box>
                 </Box>
 
-                <Box></Box>
+                <Box p={8} className='hero-line'>
+                    <Center>
+                        <Image src={hero} alt="hero" boxSize="500px" className='hero-image'/>
+                    </Center>
+                </Box>
+
                 <Box>
                     <Text className="sub-text-right">
                         years of <br /> Experience

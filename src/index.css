@@ -70,3 +70,35 @@ code {
   line-height: 30px;
 }
 
+.hero-image {
+  border-radius: 200px;
+}
+
+.hero-line{
+  border: 1px solid #EDEDED;
+  border-radius: 200px;
+
+}
+
+.divider {
+  border-bottom: 1px solid black;
+  width: 100%;
+}
+
+
+.adv-box{
+  background-color: #F3F3F3;
+  border-radius: 100px;
+  filter: grayscale(100%);
+  transition: filter 0.25s;
+}
+
+.adv-box:hover{
+  filter: grayscale(0%);
+}
+
+.adv-p{
+  font-family: 'Noto sans mono';
+  font-size: 2rem;
+  font-weight: 600;
+}
