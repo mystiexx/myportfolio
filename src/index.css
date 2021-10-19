@@ -26,9 +26,9 @@ code {
 }
 
 .title-text {
-  font-size: 2rem;
-  font-family: 'Noto sans Mono';
-  font-weight: 600;
+  font-size: 2.5rem;
+  font-family: 'Lora';
+  font-weight: 700;
 }
 
 .sub-text{
@@ -39,9 +39,9 @@ code {
 }
 
 .sub-title {
-  font-size: 1rem;
-  font-family: 'Noto Sans Mono';
-  font-weight: 500;
+  font-size: 1.2rem;
+  font-family: 'Lora';
+  font-weight: 700;
   text-align: left;
   line-height: 30px;
 }
@@ -56,16 +56,16 @@ code {
 
 .sub-title-right {
   font-size: 2.5rem;
-  font-family: 'Noto Sans Mono';
-  font-weight: 500;
+  font-family: 'Lora';
+  font-weight: 700;
   text-align: right;
   line-height: 30px;
 }
 
 .sub-title-right-normal {
   font-size: 1rem;
-  font-family: 'Noto Sans Mono';
-  font-weight: 500;
+  font-family: 'Lora';
+  font-weight: 700;
   text-align: right;
   line-height: 30px;
 }
@@ -77,7 +77,16 @@ code {
 .hero-line{
   border: 1px solid #EDEDED;
   border-radius: 200px;
+  padding: 10px;
+}
 
+.hero-line-smaller {
+  border: 1px solid #EDEDED;
+  border-radius: 100%;
+  padding: 4px;
+  width: 100%;
+  height: auto;
+  display: none;
 }
 
 .divider {
@@ -89,16 +98,34 @@ code {
 .adv-box{
   background-color: #F3F3F3;
   border-radius: 100px;
+}
+
+
+
+.adv-image{
   filter: grayscale(100%);
   transition: filter 0.25s;
 }
 
-.adv-box:hover{
+.adv-image:hover{
   filter: grayscale(0%);
 }
 
 .adv-p{
-  font-family: 'Noto sans mono';
+  font-family: 'Lora';
   font-size: 2rem;
   font-weight: 600;
+}
+
+
+.e-text{
+  font-size: 1.2rem;
+  font-family: 'Lora';
+  font-weight: 600;
+}
+
+.p-text {
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: 'Lora';
 }

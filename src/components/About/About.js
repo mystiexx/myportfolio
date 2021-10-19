@@ -8,7 +8,10 @@ const About = () => {
 
     return (
         <Box>
-            <Grid templateColumns={isNotSmallerScreen ? "repeat(3, 1fr)" : "repeat(1, 1fr)"} gap={3}>
+            <Grid
+                templateColumns={isNotSmallerScreen ? "repeat(3, 1fr)" : "repeat(1, 1fr)"}
+                gap={3}
+            >
                 <Box>
                     <Text className="sub-text">{"Biography"}</Text>
                     <Text className="sub-title" mt={3}>
@@ -33,9 +36,15 @@ const About = () => {
                     </Box>
                 </Box>
 
-                <Box p={8} className='hero-line'>
+                <Box className={isNotSmallerScreen ? "hero-line" : "hero-line-smaller"}>
                     <Center>
-                        <Image src={hero} alt="hero" boxSize="500px" className='hero-image'/>
+                        <Image
+                            src={hero}
+                            alt="hero"
+                            boxSize={isNotSmallerScreen ? "500px" : "300px"}
+                            className="hero-image"
+                            objectFit='cover'
+                        />
                     </Center>
                 </Box>
 

@@ -1,14 +1,18 @@
 import React from "react";
 import Header from "./components/Navigation/Header";
-import { Text, Container, Box, Divider } from "@chakra-ui/react";
+import { Text, Container, Box, useColorModeValue } from "@chakra-ui/react";
 import About from "./components/About/About";
 import Advantage from "./components/Advantages/Advantage";
+import Education from "./components/Education/Education";
+import Projects from "./components/Projects/Projects";
 
 const App = () => {
+    const border = useColorModeValue("2px solid #4D4D4D", "2px solid white");
     return (
         <div>
             <Header />
 
+            <Box marginTop="10px" borderBottom={border} w="100%" />
             <Box mt={8} pb={8}>
                 <Container maxW="container.xl">
                     <Text className="title-text" textAlign="center">
@@ -22,14 +26,24 @@ const App = () => {
                         <About />
                     </Box>
 
-                    {/* <Box  className='divider' marginTop='50px'/> */}
+                    <Box marginTop="80px" borderBottom={border} w="100%" />
 
-                    <Divider colorScheme="black" variant="solid" marginTop="50px" />
-
-                    <Box marginTop='70px' pb={8}>
+                    <Box marginTop="70px" pb={8}>
                         <Advantage />
                     </Box>
-                    <Divider colorScheme="black" variant="solid" marginTop="50px" />
+                    <Box marginTop="80px" borderBottom={border} w="100%" />
+
+                    <Box marginTop="70px">
+                        <Education />
+                    </Box>
+
+                    <Box marginTop="80px" borderBottom={border} w="100%" />
+
+                    <Box marginTop='70px'>
+                        <Projects/>
+                    </Box>
+
+                    <Box marginTop="80px" borderBottom={border} w="100%" />
                 </Container>
             </Box>
         </div>
