@@ -21,7 +21,7 @@ const Projects = () => {
                 {data.map((person, personIndex) => {
                     const { subTitle, name, link, github, image } = person;
                     return (
-                        <Box>
+                        <Box key={personIndex}>
                             <Image src={image} alt="sut" className="adv-image" />
                             <Box display="flex" justifyContent="space-between" alignItems="center">
                                 <Box>

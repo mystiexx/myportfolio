@@ -15,7 +15,7 @@ const Advantage = () => {
     return (
         <Box>
             <Text textAlign="center" className="title-text">
-                My Advantage
+                My Skills
             </Text>
 
             <Box marginTop="50px">
