@@ -27,7 +27,7 @@ const Projects = () => {
                             Website Development
                         </Text>
                         <Text marginTop="10px" className="p-text">
-                            Sutairu Online Store
+                            Online Store
                         </Text>
                     </Box>
                 </a>
@@ -40,7 +40,7 @@ const Projects = () => {
                             Website Development
                         </Text>
                         <Text marginTop="10px" className="p-text">
-                            Fyeo Online Diary
+                            Online Diary
                         </Text>
                     </Box>
                 </a>
@@ -53,7 +53,7 @@ const Projects = () => {
                             Website Development
                         </Text>
                         <Text marginTop="10px" className="p-text">
-                            Farmly Online Agriculutural App
+                            Online Agriculutural App
                         </Text>
                     </Box>
                 </a>

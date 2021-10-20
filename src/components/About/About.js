@@ -15,8 +15,8 @@ const About = () => {
                 <Box>
                     <Text className="sub-text">{"Biography"}</Text>
                     <Text className="sub-title" mt={3}>
-                        Work for money and build for love! <br /> I'm Roland Enola, a freelance{" "}
-                        <br /> web developer
+                        Building awesome web apps with love! I'm Roland Enola, a freelance <br />{" "}
+                        web developer
                     </Text>
 
                     <Box marginTop="50px">
@@ -35,18 +35,20 @@ const About = () => {
                         <Text className="sub-title">{"Website design"}</Text>
                     </Box>
                 </Box>
-
-                <Box className={isNotSmallerScreen ? "hero-line" : "hero-line-smaller"}>
-                    <Center>
-                        <Image
-                            src={hero}
-                            alt="hero"
-                            boxSize={isNotSmallerScreen ? "500px" : "300px"}
-                            className="hero-image"
-                            objectFit='cover'
-                        />
-                    </Center>
-                </Box>
+                
+                <Center>
+                    <Box className={isNotSmallerScreen ? "hero-line" : "hero-line-smaller"}>
+                        <Center>
+                            <Image
+                                src={hero}
+                                alt="hero"
+                                boxSize={isNotSmallerScreen ? "500px" : "300px"}
+                                className="hero-image"
+                                objectFit="cover"
+                            />
+                        </Center>
+                    </Box>
+                </Center>
 
                 <Box>
                     <Text className="sub-text-right">

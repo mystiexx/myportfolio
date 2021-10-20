@@ -10,7 +10,7 @@ const Header = () => {
 
     return (
         <Box p={3}>
-            <Container maxW="container.xl">
+            <Container maxW="container.lg">
                 <Box display="flex" justifyContent="space-between" alignItems="center">
                     <IconButton
                         aria-label="Search database"

@@ -12,14 +12,14 @@ const App = () => {
         <div>
             <Header />
 
-            <Box marginTop="10px" borderBottom={border} w="100%" />
+         
             <Box mt={8} pb={8}>
-                <Container maxW="container.xl">
+                <Container maxW="container.lg">
                     <Text className="title-text" textAlign="center">
                         {"Roland Enola "}
                     </Text>
                     <Text className="title-text" textAlign="center">
-                        {"FreeLance Web developer "}
+                        {"Frontend Web developer "}
                     </Text>
 
                     <Box mt={8}>
