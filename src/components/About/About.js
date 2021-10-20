@@ -15,7 +15,7 @@ const About = () => {
                 <Box>
                     <Text className="sub-text">{"Biography"}</Text>
                     <Text className="sub-title" mt={3}>
-                        Building awesome web apps with love! I'm Roland Enola, a freelance <br />{" "}
+                        Building awesome web apps with love! I'm Roland Enola, a frontend <br />{" "}
                         web developer
                     </Text>
 

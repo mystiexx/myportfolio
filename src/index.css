@@ -109,6 +109,7 @@ code {
 
 .adv-image:hover{
   filter: grayscale(0%);
+  cursor: pointer;
 }
 
 .adv-p{
@@ -128,4 +129,24 @@ code {
   font-size: 1.5rem;
   font-weight: 600;
   font-family: 'Lora';
+}
+
+.info{
+  font-family: 'Lora';
+  font-size: 2.5rem;
+  font-weight: 600;
+  transition: 0.5s ease-in;
+}
+
+.author {
+  font-family: 'Open sans';
+  font-size: 1rem;
+  font-weight: 700;
+  transition: 0.5s ease-in;
+}
+
+.f-text {
+  font-family: 'Open sans';
+  font-size: 1rem;
+  text-transform: uppercase;
 }

@@ -1,9 +1,8 @@
 import React from "react";
-import { Box, Text, Image, Grid } from "@chakra-ui/react";
-import fyeo from "../../assets/fyeo.jpg";
-import sut from "../../assets/sut.jpg";
-import farmly from "../../assets/farmly.jpg";
+import { Box, Text, Image, Grid, IconButton } from "@chakra-ui/react";
 import { useMediaQuery } from "@chakra-ui/media-query";
+import { AiFillGithub } from "react-icons/ai";
+import data from "./data";
 
 const Projects = () => {
     const [isNotSmallerScreen] = useMediaQuery("(min-width: 600px)");
@@ -19,44 +18,35 @@ const Projects = () => {
                 gap={6}
                 marginTop="70px"
             >
-                <a href="https://sutairu.netlify.app/">
-                    <Box>
-                        <Image src={sut} alt='sut' className='adv-image'/>
-                        <Text marginTop="30px" className="sub-text">
-                            {" "}
-                            Website Development
-                        </Text>
-                        <Text marginTop="10px" className="p-text">
-                            Online Store
-                        </Text>
-                    </Box>
-                </a>
-
-                <a href="https://fyeo.netlify.app/">
-                    <Box>
-                        <Image src={fyeo} alt='fyeo' className='adv-image'/>
-                        <Text marginTop="30px" className="sub-text">
-                            {" "}
-                            Website Development
-                        </Text>
-                        <Text marginTop="10px" className="p-text">
-                            Online Diary
-                        </Text>
-                    </Box>
-                </a>
-
-                <a href="https://farmily.netlify.app">
-                    <Box>
-                        <Image src={farmly} alt='farmly' className='adv-image' />
-                        <Text marginTop="30px" className="sub-text">
-                            {" "}
-                            Website Development
-                        </Text>
-                        <Text marginTop="10px" className="p-text">
-                            Online Agriculutural App
-                        </Text>
-                    </Box>
-                </a>
+                {data.map((person, personIndex) => {
+                    const { subTitle, name, link, github, image } = person;
+                    return (
+                        <Box>
+                            <Image src={image} alt="sut" className="adv-image" />
+                            <Box display="flex" justifyContent="space-between" alignItems="center">
+                                <Box>
+                                    <Text marginTop="30px" className="sub-text">
+                                        {" "}
+                                        {subTitle}
+                                    </Text>
+                                    <a href={link}>
+                                        <Text marginTop="10px" className="p-text">
+                                            {name}
+                                        </Text>
+                                    </a>
+                                </Box>
+                                <a href={github}>
+                                    <IconButton
+                                        aria-label="Search database"
+                                        icon={<AiFillGithub size={20} />}
+                                        variant="ghost"
+                                        display={isNotSmallerScreen ? "inline" : "none"}
+                                    />
+                                </a>
+                            </Box>
+                        </Box>
+                    );
+                })}
             </Grid>
         </Box>
     );

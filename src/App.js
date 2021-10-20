@@ -5,6 +5,8 @@ import About from "./components/About/About";
 import Advantage from "./components/Advantages/Advantage";
 import Education from "./components/Education/Education";
 import Projects from "./components/Projects/Projects";
+import Reviews from "./components/Reviews/Review";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
     const border = useColorModeValue("2px solid #4D4D4D", "2px solid white");
@@ -44,6 +46,16 @@ const App = () => {
                     </Box>
 
                     <Box marginTop="80px" borderBottom={border} w="100%" />
+
+                    <Box marginTop='70px'>
+                        <Reviews/>
+                    </Box>
+
+                    <Box marginTop="80px" borderBottom={border} w="100%" />
+
+                    <Box marginTop='30px'>
+                        <Footer/>
+                    </Box>
                 </Container>
             </Box>
         </div>
