@@ -2,7 +2,6 @@ import React from "react";
 import Header from "./components/Navigation/Header";
 import { Text, Container, Box, useColorModeValue } from "@chakra-ui/react";
 import About from "./components/About/About";
-import Advantage from "./components/Advantages/Advantage";
 import Education from "./components/Education/Education";
 import Projects from "./components/Projects/Projects";
 import Reviews from "./components/Reviews/Review";
@@ -14,7 +13,6 @@ const App = () => {
         <div>
             <Header />
 
-         
             <Box mt={8} pb={8}>
                 <Container maxW="container.lg">
                     <Text className="title-text" textAlign="center">
@@ -30,8 +28,8 @@ const App = () => {
 
                     <Box marginTop="80px" borderBottom={border} w="100%" />
 
-                    <Box marginTop="70px" pb={8}>
-                        <Advantage />
+                    <Box marginTop="70px">
+                        <Projects />
                     </Box>
                     <Box marginTop="80px" borderBottom={border} w="100%" />
 
@@ -41,20 +39,14 @@ const App = () => {
 
                     <Box marginTop="80px" borderBottom={border} w="100%" />
 
-                    <Box marginTop='70px'>
-                        <Projects/>
+                    <Box marginTop="70px">
+                        <Reviews />
                     </Box>
 
                     <Box marginTop="80px" borderBottom={border} w="100%" />
 
-                    <Box marginTop='70px'>
-                        <Reviews/>
-                    </Box>
-
-                    <Box marginTop="80px" borderBottom={border} w="100%" />
-
-                    <Box marginTop='30px'>
-                        <Footer/>
+                    <Box marginTop="30px">
+                        <Footer />
                     </Box>
                 </Container>
             </Box>

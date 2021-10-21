@@ -11,7 +11,9 @@ const data = [
         name: "Online Store",
         link: "https://sutairu.netlify.app/",
         github: "https://github.com/mystiexx/e-shop",
-        image: sut
+        image: sut,
+        article:
+            "This is an online e-commerce store i made using Reactjs, i also used commercejs api to host the products and handle checkout, and stripe was implemented for the pay route",
     },
     {
         id: 2,
@@ -19,7 +21,8 @@ const data = [
         name: "Online Diary",
         link: "https://fyeo.netlify.app/",
         github: "https://github.com/mystiexx/diary",
-        image: fyeo
+        image: fyeo,
+        article: ' This is an online journal made with reactjs, no external css libraries was used when creating this project'
     },
     {
         id: 3,
@@ -27,7 +30,7 @@ const data = [
         name: "Online App",
         link: "https://farmily.netlify.app",
         github: "https://github.com/mystiexx/farmly",
-        image: farmly
+        image: farmly,
     },
     {
         id: 4,
@@ -35,7 +38,7 @@ const data = [
         name: "Send UI",
         link: "https://send-css.netlify.app/",
         github: "https://github.com/mystiexx/sendfrieght",
-        image: sendI
+        image: sendI,
     },
     {
         id: 5,
@@ -43,7 +46,7 @@ const data = [
         name: "A Porfoilio UI",
         link: "https://send-css.netlify.app/",
         github: "https://github.com/mystiexx/DJ-Portfolio",
-        image: dj
+        image: dj,
     },
 ];
 

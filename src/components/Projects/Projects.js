@@ -19,7 +19,7 @@ const Projects = () => {
                 marginTop="70px"
             >
                 {data.map((person, personIndex) => {
-                    const { subTitle, name, link, github, image } = person;
+                    const { subTitle, name, link, github, image, article } = person;
                     return (
                         <Box key={personIndex}>
                             <Image src={image} alt="sut" className="adv-image" />
@@ -44,6 +44,7 @@ const Projects = () => {
                                     />
                                 </a>
                             </Box>
+                            <p>{article}</p>
                         </Box>
                     );
                 })}
