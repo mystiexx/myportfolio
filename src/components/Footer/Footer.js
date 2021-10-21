@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Text, IconButton, Center } from "@chakra-ui/react";
-import { AiOutlineTwitter, AiFillGithub, AiOutlineDribbble } from "react-icons/ai";
+import {  AiFillGithub, AiOutlineDribbble } from "react-icons/ai";
 import { useMediaQuery } from "@chakra-ui/media-query";
 
 const Footer = () => {
@@ -13,16 +13,12 @@ const Footer = () => {
                 justifyContent={isNotSmallerScreen ? "space-between" : "center"}
                 alignItems="center"
             >
-                <Text className="f-text" textAlign={isNotSmallerScreen ? " " : "center"}>
+                <Text className="f-text" textAlign={isNotSmallerScreen ? " " : "center"} >
                 &copy; {new Date().getFullYear()}  Alone All rights reserved
                 </Text>
                 {isNotSmallerScreen ? (
                     <Box>
-                        <IconButton
-                            aria-label="Search database"
-                            icon={<AiOutlineTwitter size={25} />}
-                            variant="ghost"
-                        />
+                      
                         <a href="https://github.com/mystiexx">
                             <IconButton
                                 aria-label="Search database"
@@ -41,11 +37,7 @@ const Footer = () => {
                 ) : (
                     <Center>
                         <Box>
-                            <IconButton
-                                aria-label="Search database"
-                                icon={<AiOutlineTwitter size={25} />}
-                                variant="ghost"
-                            />
+                         
                             <a href="https://github.com/mystiexx">
                                 <IconButton
                                     aria-label="Search database"

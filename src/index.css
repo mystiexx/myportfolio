@@ -22,7 +22,7 @@ code {
 .header-logo {
   font-size: 1.2rem;
   text-transform: uppercase;
-  font-family: 'Festive';
+  font-family: 'Lora';
 }
 
 .title-text {
@@ -71,7 +71,7 @@ code {
 }
 
 .hero-image {
-  border-radius: 200px;
+  border-radius: 800px;
 }
 
 .hero-line{
@@ -149,4 +149,5 @@ code {
   font-family: 'Open sans';
   font-size: 1rem;
   text-transform: uppercase;
+  font-weight: 600;
 }

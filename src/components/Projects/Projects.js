@@ -40,7 +40,7 @@ const Projects = () => {
                                         aria-label="Search database"
                                         icon={<AiFillGithub size={20} />}
                                         variant="ghost"
-                                        display={isNotSmallerScreen ? "inline" : "none"}
+                                       
                                     />
                                 </a>
                             </Box>

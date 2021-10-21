@@ -1,7 +1,8 @@
 import React from "react";
 import { Box, Text, Grid, Image, Center } from "@chakra-ui/react";
-import hero from "../../assets/hero.jpg";
+import hero from "../../assets/hero.png";
 import { useMediaQuery } from "@chakra-ui/media-query";
+import Tilt from 'react-parallax-tilt'
 
 const About = () => {
     const [isNotSmallerScreen] = useMediaQuery("(min-width: 600px)");
@@ -37,6 +38,7 @@ const About = () => {
                 </Box>
                 
                 <Center>
+                    <Tilt>
                     <Box className={isNotSmallerScreen ? "hero-line" : "hero-line-smaller"}>
                         <Center>
                             <Image
@@ -48,6 +50,7 @@ const About = () => {
                             />
                         </Center>
                     </Box>
+                    </Tilt>
                 </Center>
 
                 <Box>
@@ -58,17 +61,12 @@ const About = () => {
                         {"2"}
                     </Text>
 
-                    <Box marginTop="50px">
-                        <Text className="sub-text-right">{"Contact"}</Text>
-                        <Text className="sub-title-right-normal" mt={4}>
-                            {"Bayelsa State, Nigeria"}
-                        </Text>
-                    </Box>
+                   
 
                     <Box marginTop="50px">
                         <Text className="sub-text-right">{"projects done"}</Text>
-                        <Text className="sub-title-right-normal" mt={4}>
-                            {"Bayelsa State, Nigeria"}
+                        <Text className="sub-title-right" mt={4}>
+                            {"6"}
                         </Text>
                     </Box>
                 </Box>

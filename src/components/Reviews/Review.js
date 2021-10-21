@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Box, Text, IconButton, Center } from "@chakra-ui/react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { useMediaQuery } from "@chakra-ui/media-query";
+
 
 const people = [
     {
@@ -20,6 +22,8 @@ const people = [
 const Reviews = () => {
     const [index, setIndex] = useState(0);
     const { name, title, text } = people[index];
+    const [isNotSmallerScreen] = useMediaQuery("(min-width: 600px)");
+
 
     const checkNumber = (number) => {
         if (number > people.length - 1) {
@@ -52,7 +56,7 @@ const Reviews = () => {
 
             <Center>
                 <Box marginTop="50px">
-                    <Text className="info" textAlign="center">
+                    <Text className="info" textAlign="center" fontSize={isNotSmallerScreen ? '2.5rem' : '1.5rem' }>
                         {text}
                     </Text>
                     <Text className="author" textAlign="center" marginTop='20px'>
