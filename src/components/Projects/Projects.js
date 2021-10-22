@@ -3,6 +3,7 @@ import { Box, Text, Image, Grid, IconButton } from "@chakra-ui/react";
 import { useMediaQuery } from "@chakra-ui/media-query";
 import { AiFillGithub } from "react-icons/ai";
 import data from "./data";
+import { MdOutlineLaunch } from "react-icons/md";
 
 const Projects = () => {
     const [isNotSmallerScreen] = useMediaQuery("(min-width: 600px)");
@@ -29,20 +30,28 @@ const Projects = () => {
                                         {" "}
                                         {subTitle}
                                     </Text>
+
+                                    <Text marginTop="10px" className="p-text">
+                                        {name}
+                                    </Text>
+                                </Box>
+                                <Box>
+                                    <a href={github}>
+                                        <IconButton
+                                            aria-label="Search database"
+                                            icon={<AiFillGithub size={20} />}
+                                            variant="ghost"
+                                        />
+                                    </a>
+
                                     <a href={link}>
-                                        <Text marginTop="10px" className="p-text">
-                                            {name}
-                                        </Text>
+                                        <IconButton
+                                            aria-label="Search database"
+                                            icon={<MdOutlineLaunch size={20} />}
+                                            variant="ghost"
+                                        />
                                     </a>
                                 </Box>
-                                <a href={github}>
-                                    <IconButton
-                                        aria-label="Search database"
-                                        icon={<AiFillGithub size={20} />}
-                                        variant="ghost"
-                                       
-                                    />
-                                </a>
                             </Box>
                             <p>{article}</p>
                         </Box>

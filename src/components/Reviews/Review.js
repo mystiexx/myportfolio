@@ -3,13 +3,13 @@ import { Box, Text, IconButton, Center } from "@chakra-ui/react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { useMediaQuery } from "@chakra-ui/media-query";
 
-
 const people = [
     {
         id: 1,
         name: "Sapele Moses",
-        title: "Software Engineer",
-        text: "lovely work done",
+        title: "FullStack Engineer",
+        text: "Enola is an amazing dev with great ui/ux skill and insight and an overall css ninja. working with him was awesome.",
+        job:'payhippo'
     },
     {
         id: 2,
@@ -21,9 +21,8 @@ const people = [
 
 const Reviews = () => {
     const [index, setIndex] = useState(0);
-    const { name, title, text } = people[index];
+    const { name, title, text, job } = people[index];
     const [isNotSmallerScreen] = useMediaQuery("(min-width: 600px)");
-
 
     const checkNumber = (number) => {
         if (number > people.length - 1) {
@@ -49,21 +48,25 @@ const Reviews = () => {
         });
     };
     return (
-        <Box>
+        <Box h='60vh'>
             <Text textAlign="center" className="title-text">
                 / Reviews
             </Text>
 
             <Center>
                 <Box marginTop="50px">
-                    <Text className="info" textAlign="center" fontSize={isNotSmallerScreen ? '2.5rem' : '1.5rem' }>
-                        {text}
+                    <Text
+                        className="info"
+                        textAlign="center"
+                        fontSize={isNotSmallerScreen ? "2.5rem" : "1.5rem"}
+                    >
+                        "{text}"
                     </Text>
-                    <Text className="author" textAlign="center" marginTop='20px'>
+                    <Text className="author" textAlign="center" marginTop="20px">
                         {name}
                     </Text>
                     <Text className="job" textAlign="center">
-                        {title}
+                        {title} @{job}
                     </Text>
 
                     <Box
