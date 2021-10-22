@@ -36,7 +36,7 @@ const About = () => {
                     </Box>
                 </Box>
 
-                <Box position="relative">
+                <Box position="relative" display={isNotSmallerScreen ? 'inline-block' : 'none'}>
                     <div className="word">
                         <Image src={logo}/>
                         <span>A</span>
