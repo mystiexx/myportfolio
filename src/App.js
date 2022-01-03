@@ -4,7 +4,6 @@ import { Text, Container, Box, useColorModeValue } from "@chakra-ui/react";
 import About from "./components/About/About";
 import Education from "./components/Education/Education";
 import Projects from "./components/Projects/Projects";
-import Reviews from "./components/Reviews/Review";
 import Footer from "./components/Footer/Footer";
 
 const App = () => {
@@ -37,11 +36,11 @@ const App = () => {
                         <Education />
                     </Box>
 
-                    <Box marginTop="80px" borderBottom={border} w="100%" />
+                   
 
-                    <Box marginTop="70px">
+                    {/* <Box marginTop="70px">
                         <Reviews />
-                    </Box>
+                    </Box> */}
 
                     <Box marginTop="80px" borderBottom={border} w="100%" />
 

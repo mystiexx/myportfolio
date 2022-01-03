@@ -9,6 +9,7 @@ const Projects = () => {
     const [isNotSmallerScreen] = useMediaQuery("(min-width: 600px)");
 
     return (
+        
         <Box h="auto">
             <Text textAlign="center" className="title-text">
                 Projects
@@ -20,9 +21,9 @@ const Projects = () => {
                 marginTop="70px"
             >
                 {data.map((person, personIndex) => {
-                    const { subTitle, name, link, github, image, article } = person;
+                    const { subTitle, name, link, github, image, article, stacks } = person;
                     return (
-                        <Box key={personIndex}>
+                        <Box key={name + personIndex}>
                             <Image src={image} alt="sut" className="adv-image" />
                             <Box display="flex" justifyContent="space-between" alignItems="center">
                                 <Box>
@@ -54,11 +55,13 @@ const Projects = () => {
                                 </Box>
                             </Box>
                             <p>{article}</p>
+                            <p>Stacks: {stacks}</p>
                         </Box>
                     );
                 })}
             </Grid>
         </Box>
+       
     );
 };
 

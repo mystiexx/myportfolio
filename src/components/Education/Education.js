@@ -11,7 +11,10 @@ const Education = () => {
                 {"Education & Experience"}
             </Text>
 
-            <Grid gridTemplateColumns={isNotSmallerScreen ? "repeat(2, 1fr)" : "repeat(1, 1fr)" } gap={6}>
+            <Grid
+                gridTemplateColumns={isNotSmallerScreen ? "repeat(3, 1fr)" : "repeat(1, 1fr)"}
+                gap={6}
+            >
                 <Box>
                     <Text className="sub-text" marginTop="30px" fontWeight="500">
                         {" "}
@@ -27,21 +30,32 @@ const Education = () => {
                 <Box>
                     <Text className="sub-text" marginTop="30px" fontWeight="500">
                         {" "}
+                        July 2020 - Mar 2021{" "}
+                    </Text>
+                    <Text marginTop="50px" className="e-text">
+                        Frontend Developer
+                    </Text>
+                    <Text className="e-text">Freelance</Text>
+
+                    <Text className="sub-text" marginTop="50px" fontWeight="500">
+                        {" "}
+                        Jan 2019 - Jul 2020{" "}
+                    </Text>
+                    <Text marginTop="30px" className="e-text">
+                        Intern
+                    </Text>
+                    <Text className="e-text"> Afridash</Text>
+                </Box>
+
+                <Box>
+                    <Text className="sub-text" marginTop="30px" fontWeight="500">
+                        {" "}
                         Mar 2021 - Sep 2021{" "}
                     </Text>
                     <Text marginTop="50px" className="e-text">
                         Frontend Developer
                     </Text>
                     <Text className="e-text"> Euidem Technologies</Text>
-
-                    <Text className="sub-text" marginTop="50px" fontWeight="500">
-                        {" "}
-                        Jan 2019 - Jan 2020{" "}
-                    </Text>
-                    <Text marginTop="30px" className="e-text">
-                        Intern
-                    </Text>
-                    <Text className="e-text"> Afridash</Text>
                 </Box>
             </Grid>
         </Box>

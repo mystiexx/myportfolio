@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Text, Grid, Image } from "@chakra-ui/react";
 import { useMediaQuery } from "@chakra-ui/media-query";
-import logo from '../../assets/logo.png'
+import logo from "../../assets/logo.png";
 
 const About = () => {
     const [isNotSmallerScreen] = useMediaQuery("(min-width: 600px)");
@@ -36,29 +36,31 @@ const About = () => {
                     </Box>
                 </Box>
 
-                <Box position="relative">
-                    <div className="word">
-                        <Image src={logo}/>
-                        <span>A</span>
-                        <span>L</span> 
-                        <span>O</span>
-                        <span>N</span> 
-                        <span>E</span>
-                    </div>
-                </Box>
+                {isNotSmallerScreen && (
+                    <Box position="relative">
+                        <div className="word">
+                            <Image src={logo} />
+                            <span>A</span>
+                            <span>L</span>
+                            <span>O</span>
+                            <span>N</span>
+                            <span>E</span>
+                        </div>
+                    </Box>
+                )}
 
                 <Box>
                     <Text className="sub-text-right">
                         years of <br /> Experience
                     </Text>
                     <Text className="sub-title-right" mt={3}>
-                        {"2"}
+                        {"1+"}
                     </Text>
 
                     <Box marginTop="50px">
                         <Text className="sub-text-right">{"projects done"}</Text>
                         <Text className="sub-title-right" mt={4}>
-                            {"6"}
+                            {"9"}
                         </Text>
                     </Box>
                 </Box>
