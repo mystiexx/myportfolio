@@ -1,72 +1,135 @@
 import React from "react";
-import { Box, Text, Grid, Image } from "@chakra-ui/react";
+import { Box, Text, Grid, IconButton } from "@chakra-ui/react";
 import { useMediaQuery } from "@chakra-ui/media-query";
-import logo from "../../assets/logo.png";
+import {
+  AiFillGithub,
+  AiOutlineDribbble,
+  AiFillLinkedin,
+  AiOutlineTwitter,
+} from "react-icons/ai";
+import "./style.css";
 
 const About = () => {
-    const [isNotSmallerScreen] = useMediaQuery("(min-width: 600px)");
+  const [isNotSmallerScreen] = useMediaQuery("(min-width: 600px)");
 
-    return (
-        <Box>
-            <Grid
-                templateColumns={isNotSmallerScreen ? "repeat(3, 1fr)" : "repeat(1, 1fr)"}
-                gap={6}
+  return (
+    <Box>
+      <Grid
+        templateColumns={isNotSmallerScreen ? "200px auto" : "repeat(1, 1fr)"}
+        gap={6}
+      >
+        <Box className={isNotSmallerScreen ? "step-item" : null}>
+          <Box
+            className={isNotSmallerScreen ? "step-box-item" : null}
+            display="flex"
+            justifyContent="center"
+            flexDirection={isNotSmallerScreen ? "column" : "row"}
+          >
+            <a
+              href="https://www.linkedin.com/in/enola-roland-18704b135/"
+              target={"_blank"}
+              rel="noreferrer noopener"
             >
-                <Box>
-                    <Text className="sub-text">{"Biography"}</Text>
-                    <Text className="sub-title" mt={3}>
-                        Building awesome web apps with love! I'm Roland Enola, a frontend <br /> web
-                        developer
-                    </Text>
+              <IconButton
+                aria-label="Search database"
+                icon={<AiFillLinkedin size={25} />}
+                variant="ghost"
+                _hover={{
+                  background: "transparent",
+                }}
+              />
+            </a>
 
-                    <Box marginTop="50px">
-                        <Text className="sub-text">{"Contact"}</Text>
-                        <Text className="sub-title" mt={4}>
-                            {"Bayelsa State, Nigeria"}
-                        </Text>
-                        <Text className="sub-title">{"aloneroland@gmail.com"}</Text>
-                        <Text className="sub-title">{"+234 7059606487"}</Text>
-                    </Box>
-                    <Box marginTop="50px">
-                        <Text className="sub-text">{"Services"}</Text>
-                        <Text className="sub-title" mt={4}>
-                            {"Website Development"}
-                        </Text>
-                        <Text className="sub-title">{"Website design"}</Text>
-                    </Box>
-                </Box>
+            <a
+              href="https://twitter.com/emystiexx"
+              target={"_blank"}
+              rel="noreferrer noopener"
+            >
+              <IconButton
+                aria-label="Search database"
+                icon={<AiOutlineTwitter size={25} />}
+                variant="ghost"
+                _hover={{
+                  background: "transparent",
+                }}
+              />
+            </a>
 
-                {isNotSmallerScreen && (
-                    <Box position="relative">
-                        <div className="word">
-                            <Image src={logo} />
-                            <span>A</span>
-                            <span>L</span>
-                            <span>O</span>
-                            <span>N</span>
-                            <span>E</span>
-                        </div>
-                    </Box>
-                )}
-
-                <Box>
-                    <Text className="sub-text-right">
-                        years of <br /> Experience
-                    </Text>
-                    <Text className="sub-title-right" mt={3}>
-                        {"1+"}
-                    </Text>
-
-                    <Box marginTop="50px">
-                        <Text className="sub-text-right">{"projects done"}</Text>
-                        <Text className="sub-title-right" mt={4}>
-                            {"9"}
-                        </Text>
-                    </Box>
-                </Box>
-            </Grid>
+            <a
+              href="https://github.com/mystiexx"
+              target={"_blank"}
+              rel="noreferrer noopener"
+            >
+              <IconButton
+                aria-label="Search database"
+                icon={<AiFillGithub size={25} />}
+                variant="ghost"
+                _hover={{
+                  background: "transparent",
+                }}
+              />
+            </a>
+            <a
+              href="https://dribbble.com/alonexx"
+              target={"_blank"}
+              rel="noreferrer noopener"
+            >
+              <IconButton
+                aria-label="Search database"
+                icon={<AiOutlineDribbble size={25} />}
+                variant="ghost"
+                _hover={{
+                  background: "transparent",
+                }}
+              />
+            </a>
+          </Box>
         </Box>
-    );
+        <Box
+          display="flex"
+          flexDirection="column"
+          justifyContent="center"
+          position="relative"
+          top="150px"
+        >
+          <Text
+            fontSize={isNotSmallerScreen ? "4xl" : "3xl"}
+            fontWeight="600"
+            textAlign={isNotSmallerScreen ? "left" : "center"}
+          >
+            {"Roland Enola "}
+          </Text>
+          <Text
+            fontSize={isNotSmallerScreen ? "4xl" : "4xl"}
+            fontWeight="700"
+            textAlign={isNotSmallerScreen ? "left" : "center"}
+          >
+            {"Frontend Web developer "}
+          </Text>
+
+          <Text
+            fontSize={isNotSmallerScreen ? "2xl" : "2xl"}
+            mt={3}
+            textAlign={isNotSmallerScreen ? "left" : "center"}
+          >
+            Building awesome web apps with love! I'm Roland Enola, a frontend{" "}
+            <br /> web developer
+          </Text>
+
+          <Box marginTop="50px">
+            <Text
+              textAlign={isNotSmallerScreen ? "left" : "center"}
+              fontSize={isNotSmallerScreen ? "xl" : "2xl"}
+              color="#577CFE"
+              fontWeight='600'
+            >
+              Get in touch: {"aloneroland@gmail.com"}
+            </Text>
+          </Box>
+        </Box>
+      </Grid>
+    </Box>
+  );
 };
 
 export default About;

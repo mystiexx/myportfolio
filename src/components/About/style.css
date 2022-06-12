@@ -1,0 +1,36 @@
+.step-item {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  font-size: 11px;
+  width: 100%;
+}
+
+.step-item::after {
+  position: absolute;
+  content: "";
+  border-left: 1px solid #fff;
+  height: 80vh;
+  top: 20px;
+  left: 5.7%;
+  z-index: 2;
+}
+
+.step-box-item {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: auto;
+  padding: 20px;
+  border: 1px solid #000;
+  background: #000;
+  color: #fff;
+  margin-bottom: 40px;
+  left: -25%;
+  top: 90%;
+  transform: translate(25%, -40%);
+}
